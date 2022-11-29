@@ -1,12 +1,6 @@
-g++ version 11.2.0
-linux distro :arch linux x86_64
-kernel       : 5.16.15-arch1-1
+# Desision tree c4.5 algorithm built in C++
 
-
-compiling: g++ -o driver driver.cpp
-
-runing: ./driver file1.csv file2.csv
-
+## Details
 This program creates a decision tree using the C4.5 algorithm.
 
 Output:
@@ -18,6 +12,20 @@ Output:
 				<Attribute2>
 					(...)
 	classification of the data in file2.csv
+
+
+
+## Tested in:
+g++ version 11.2.0
+linux distro :arch linux x86_64
+kernel       : 5.16.15-arch1-1
+
+
+## compiling: 
+`g++ -o driver driver.cpp`
+
+## runing: 
+`./driver file1.csv file2.csv`
 
 Note:
 	it is advised to run with "./driver file1.csv file2.csv | less" , this will make it so you can start at the top and let you freely move trough the output.
